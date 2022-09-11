@@ -1,0 +1,195 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# vehicleportal
+
+Vehicle Portal API allowing buyers and dealers to Post, View Shop and Purchase Vehicles.
+
+## Dealers Collections [/users/dealers]
+
+### List All Dealers [GET]
+
++ Response 200 (application/json)
+    
+        [   
+            {"title" : "List All Users",
+                "users" : 
+                    [
+                        {
+                            "userId" : "1",
+                            "userName" : "TestDealer1",
+                        },
+                        {
+                            "userId" : "2",
+                            "userName" : "TestDealer2",
+                        },
+                        {
+                            "userId" : "3",
+                            "userName" : "TestDealer3",
+                        },
+                        {
+                            "userId" : "4",
+                            "userName" : "TestDealer4",
+                        },
+                        {
+                            "userId" : "5",
+                            "userName" : "TestDealer5",
+                        }
+                    ]
+        ]
+        
+## Buyers Collections [/users/buyers]
+
+### List All Buyers [GET]
+
++ Response 200 (application/json)
+    
+        [   
+            {
+                "title" : "List All Buyers",
+                "users" : 
+                    [
+                        {
+                            "userId" : "1",
+                            "userName" : "TestBuyer1",
+                        },
+                        {
+                            "userId" : "2",
+                            "userName" : "TestBuyer2",
+                        },
+                        {
+                            "userId" : "3",
+                            "userName" : "TestBuyer3",
+                        },
+                        {
+                            "userId" : "4",
+                            "userName" : "TestBuyer4",
+                        },
+                        {
+                            "userId" : "5",
+                            "userName" : "TestBuyer5",
+                        }
+                    ]
+        ]
+
+        
+## Car Collections [/cars]
+
+## Car Brands Collections [/cars/brands]
+
+### List All Car Brands Users [GET]
+
++ Response 200 (application/json)
+
+## Car Types [/cars/types]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+## Car Models [/cars/models]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+## Car Details [/cars/details]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+## Portal Dashboard [/portal/dashboard]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+
+## Portal Search [/portal/search]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+
+## Portal Search Result List [/portal/searchlist]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+
+## Portal Search Result Detail [/portal/searchdetail]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+
+## Portal ShoppingCart Page [/portal/shoppingcart]
+
+### List Shopping Cart [GET]
+
++ Response 200 (application/json)
+
+### Add to Cart [POST]
+
++ Request (application/json)
+
++ Response 201 (application/json)
+
+    + Headers
+
+    + Body
+
+
+## Portal Checkout ShoppingCart Page [/portal/cartcheckout]
+
+### Checkout to Cart [POST]
+
++ Request (application/json)
+
++ Response 200 (application/json)
+
+    + Headers
+
+    + Body
+    
+## Portal Payment Page [/portal/payment]
+
+### Checkout to Cart [POST]
+
++ Request (application/json)
+
++ Response 200 (application/json)
+
+    + Headers
+
+    + Body
+
+
+## Portal Create Invoice  [/portal/invoice/create]
+
+### Checkout to Cart [POST]
+
++ Request (application/json)
+
++ Response 200 (application/json)
+
+    + Headers
+
+    + Body
+
+
+## Portal Email Invoice [/portal/invoice/email]
+
+### Checkout to Cart [POST]
+
++ Request (application/json)
+
++ Response 200 (application/json)
+
+    + Headers
+
+    + Body
